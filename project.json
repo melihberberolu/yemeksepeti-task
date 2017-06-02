@@ -1,0 +1,8 @@
+{
+  "title": "yemeksepeti-task",
+  "lang": "tr",
+  "port": {
+    "serve": 4000,
+    "browsersync": 4001
+  }
+}

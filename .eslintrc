@@ -1,0 +1,7 @@
+// http://eslint.org/docs/rules/
+/**
+npm i eslint eslint-loader eslint-plugin-angular eslint-plugin-babel eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jsx eslint-plugin-jsx-a11y eslint-plugin-lodash eslint-plugin-react eslint-watch eslint-plugin-redux-saga -D
+*/
+{
+
+}
