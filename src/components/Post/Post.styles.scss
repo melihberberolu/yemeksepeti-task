@@ -1,0 +1,25 @@
+@import "variables";
+@import "mixins/flexbox";
+
+#post {
+  @include flex-display();
+  @include flex-direction(column);
+
+  .title {
+    text-align: center;
+  }
+  .post-image {
+    @include flex-align-self(center);
+    width: 50%;
+    height: auto;
+  }
+  .content-txt {
+    font-size: 16px;
+    color: #000;
+    padding: 15px;
+  }
+  .comment-title {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
