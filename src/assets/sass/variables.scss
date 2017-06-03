@@ -1,0 +1,110 @@
+$font-size-xs:0.8em;
+$font-size-sm:0.9em;
+$font-size-regular:1em;
+$font-size-md:1.1em;
+$font-size-lg:1.2em;
+$font-size-xl:1.3em;
+$font-size-xxl:1.4em;
+$font-size-xxxl:1.7em;
+$font-size-def: 16px;
+
+
+
+// change these values if its not imported into bootstrap
+  // Extra small screen / phone
+  $screen-xs: 480px !default;
+  // Small screen / phone
+  $screen-sm: 768px !default;
+  // Medium screen / tablet
+  $screen-md: 992px !default;
+  // Large screen / desktop
+  $screen-lg: 1200px !default;
+
+$color-purple: #886479;
+$color-purple-lighten:lighten($color-purple,10%);
+$color-purple-darken:darken($color-purple,10%);
+
+
+$base-navy-blue:          #27328e !default;
+$base-green:              #80bd01 !default;
+$base-lighter-green:      #97c548 !default;
+$base-darker-green:       #eceeee !default;
+$base-purple-darker:      #765468 !default;
+$base-purple:             #886479 !default;
+$base-purple-lighter:     #a57e95 !default;
+$base-white:              #ffffff !default;
+$base-red:                #ff0600 !default;
+$base-lighter-red:        #ff3000 !default;
+$base-orange-darker:      #de7c3b !default;
+$base-orange:             #f29b2b !default;
+$base-dark-orange:        #f2632b !default;
+$base-blue:               #3dc2e5 !default;
+$base-yellow:             #fff9ce !default;
+$base-dirty-white:        #f6f7f7 !default;
+$base-dirty-white-drkr:   #f2f2f2 !default;
+$base-pop-text-color:     #ff4200 !default;
+$base-navy:               #2c3943 !default;
+$base-dark-navy-hvr:      #4d5961 !default;
+$base-dark-navy:          #697379 !default;
+$base-lighter-navy:       #303e48 !default;
+$base-footer-bg-color:    #edeeee !default;
+$base-footer-br-color:    #dddddd !default;
+$base-login-popup-bg:     #f8f8f8 !default;
+
+$text-color:            #363636 !default;
+$text-color-lighter:    #c6c6c6 !default;
+$text-gray-color:       #7a848a !default;
+$text-footer-color:     #969b9f !default;
+$text-placeholder:      #c3c3c3 !default;
+
+// Input Colors
+$default-input-bg:      #ffffff !default;
+$valid-input-bg:        #edf6db !default;
+
+
+$font0 : "blokk";
+
+
+
+
+/////////////////////
+// gradient colors //
+/////////////////////
+
+$nav-bg-start:       #4251cd;
+$nav-bg-end:         #3440a2;
+
+
+
+//////////////////
+// brand colors //
+//////////////////
+$blogger:            #f57d00;
+$codepen:            #a561cb;
+$dropbox:            #007ee5;
+$evernote:           #7ac142;
+$facebook:           #3b5998;
+$flickr-2:           #ff0084;
+$flickr:             #0063dc;
+$foursquare:         #0072b1;
+$github-2:           #999999;
+$github:             #4183c4;
+$goodreads:          #9F955B;
+$google-2:           #db4437;
+$google-plus:        #dd4b39;
+$google:             #4285f4;
+$imdb:               #f5de50;
+$instagram:          #3f729b;
+$lastfm:             #c3000d;
+$linkedin:           #0976b4;
+$pinterest:          #cc2127;
+$rss:                #f26522;
+$spotify:            #7ab800;
+$swarm:              #F8741F;
+$tumblr:             #35465c;
+$twitter:            #55acee;
+$vimeo-2:            #1ab7ea;
+$vimeo:              #162221;
+$vine:               #00b488;
+$youtube-2:          #b31217;
+$youtube:            #e52d27;
