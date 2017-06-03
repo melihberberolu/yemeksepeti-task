@@ -1,8 +1,10 @@
-import {all} from 'redux-saga/effects';
+import { all, fork } from 'redux-saga/effects';
 import { formActionSaga } from "redux-form-saga";
+import blogSaga from '../containers/Blog/Blog.saga';
 
 export default function* rootSaga() {
   yield all([
-    formActionSaga
+    fork(formActionSaga),
+    fork(blogSaga)
   ]);
 }
