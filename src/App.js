@@ -8,7 +8,7 @@ import createSagaMiddleware from 'redux-saga';
 
 const sagaMiddleware = createSagaMiddleware();
 import rootSaga from "./sagas/rootSaga";
-import Home from './containers/Home/Home.container';
+import Blog from './containers/Blog/Blog.container';
 
 export const store = configureStore(initialState, [
   sagaMiddleware,
@@ -19,7 +19,7 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Home />
+        <Blog />
       </Provider>
     );
   }
