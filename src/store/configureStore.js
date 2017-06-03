@@ -1,19 +1,23 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "../rootReducer";
 import { composeWithDevTools } from 'redux-devtools-extension';
+import { autoRehydrate, persistStore } from 'redux-persist';
+import reduxPersist from './reduxPersist';
+import RehydrationServices from '../services/rehydrationServices';
 
 /* eslint-disable no-underscore-dangle */
 const configureStore = (initialState, middlewares) => {
-  return createStore(
-    rootReducer,
-    initialState,
-    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-    composeWithDevTools(
-      applyMiddleware(
-        ...middlewares
-      ),
-    )
-  );
+  let store = composeWithDevTools(
+    applyMiddleware(
+      ...middlewares
+    ),
+    autoRehydrate()
+  )(createStore)(rootReducer);
+
+  if (reduxPersist.active) {
+    RehydrationServices.updateReducers(store);
+  }
+  return store;
 };
 /* eslint-enable */
 
