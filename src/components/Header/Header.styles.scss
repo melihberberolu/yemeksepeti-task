@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins/flexbox";
+
+#header {
+  height: 85px;
+  background-color: $base-pop-text-color;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  @include flex-display();
+  @include flex-justify-content(center);
+  @include flex-align-items(center);
+
+  .title {
+    color: $base-white;
+    font-size: 26px;
+  }
+}
