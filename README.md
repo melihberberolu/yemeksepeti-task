@@ -1,12 +1,12 @@
-`` npm install ``
-`` npm start ``
+* `` npm install ``
+* `` npm start ``
 
 ## Packages
 
--React
--Redux
--Redux-Saga
--Redux-Form
--Redux-Form-Saga
--Redux-Persist
--Moment
+* React
+* Redux
+* Redux-Saga
+* Redux-Form
+* Redux-Form-Saga
+* Redux-Persist
+* Moment
