@@ -1,24 +1,18 @@
-import { REHYDRATE } from 'redux-persist/constants'
 import BLOG from "./Blog.constants";
 
 const initialState = {
   loading: true,
   post: null,
-  addCommentLoading: false
+  addCommentLoading: false,
 };
 
 const blogReducer = (state: Object = initialState, action) => {
 
   switch (action.type) {
-    case REHYDRATE:
-      return {
-        ...state,
-        ...action.payload.blog
-      };
     case BLOG.REQUEST_START:
       return {
         ...state,
-        loading: action.loading
+        loading: action.loading,
       };
 
     case BLOG.REQUEST_SUCCESS:
@@ -54,7 +48,6 @@ const blogReducer = (state: Object = initialState, action) => {
     default:
       return state;
   }
-
 };
 
 

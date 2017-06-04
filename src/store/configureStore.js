@@ -15,7 +15,7 @@ const configureStore = (initialState, middlewares) => {
   )(createStore)(rootReducer);
 
   if (reduxPersist.active) {
-    RehydrationServices.updateReducers(store);
+    // RehydrationServices.updateReducers(store);
   }
   return store;
 };

@@ -10,10 +10,8 @@ import CommentFormComponent from './view/Blog.CommentForm.component';
 class Blog extends Component {
 
   componentDidMount() {
-    const { requestStart, blog } = this.props;
-    if (!blog.post) {
-      requestStart && requestStart();
-    }
+    const { requestStart } = this.props;
+    requestStart && requestStart();
   }
 
 
